@@ -1,0 +1,207 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;;
+    overflow: hidden    ;
+}
+
+.con-main {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+}
+
+.search-bar {
+    width: 100%;
+    height: 7vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 50%;
+    height: 80%;
+    font-size: 20px;
+    background: transparent;
+    
+    border-radius: 5px;
+    color: #fff;
+   
+}
+::placeholder{
+    color: wheat;
+    
+}
+button{
+    width: 10%;
+    height: 80%;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    outline-color: #fff;
+    
+}
+
+button{
+    width: 500px;
+}
+.left-side {
+    background: #000;;
+    width: 50%;
+    height: 100%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.right-side {
+    width: 50%;
+    height: 100%;
+}
+
+
+.weather-details {
+    width: 100%;
+    height: 93vh;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.city-card {
+    width: 40%;
+    height: 50%;
+    margin-top: 10px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    
+}
+
+.city-name {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.icon {
+    width: 50%;
+    height: 50%;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.temp-c {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.other-temp-card {
+    width: 100%;
+    height: 50%;
+    background: #000;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.other-temp-card .card-1{
+    width: 20%;
+    height: 60%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 10px;
+    
+}
+.bi{
+font-size: 50px;
+font-weight: 900;
+color: #fff;
+
+}
+
+.card-1-temp{
+    font-size: 30px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 480px) {
+    .con-main {
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .weather-details {
+        height: 100%;
+    }
+
+   
+
+    /* .other-temp-card .card-1 {
+        width: 40%;
+        height: 40%;
+    } */
+    .other-temp-card{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .con-main {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .weather-details {
+        height: 100%;
+    }
+
+    .city-card {
+        width: 50%;
+        height: 60%;
+    }
+    .city-card p{
+        font-size: 30px;
+    }
+    
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       
+    <div class="con-main">
+     
+        <div class="left-side">
+            <iframe src='https://my.spline.design/bubbles-dbc5ea5af002db7ea04104dec9098230/' frameborder='0' width='100%' height='100%'></iframe>
+        </div>
+        <div class="right-side">
+            <div class="search-bar">
+                <input type="text"  name="" placeholder="Enter City" id="t1">
+
+                <button  onclick="fun(this)"> SEARCH</button>
+            </div>
+          
+            <div class="weather-details">
+                <div class="city-card">
+                    <div class="city-name">
+                    <p id="title">city</p>
+                </div>
+                    <div class="icon" id="img">
+                        <img src="" id="icon1" alt="temp-image" srcset="">
+                    </div>
+                    <div class="temp-c">
+                        <p><span id="temp"></span>&#8451;</p>
+                    </div>
+                </div>
+                <div class="other-temp-card">
+                    <div class="card-1">
+                        <i class="bi bi-wind"></i>
+                        <p class="card-1-temp"><span id="humidity"></span>&#8451;</p>
+                    </div>
+                    <div class="card-1">
+                        <i class="bi bi-thermometer-snow"></i>
+                        <p class="card-1-temp"><span id="min-temp"></span>&#8451;</p>
+                    </div>
+                    <div class="card-1">
+                        <i class="bi bi-thermometer-sun"></i>
+                        <p class="card-1-temp"><span id="max-temp"></span>&#8451;</p>
+                    </div>
+                    <div class="card-1">
+                        <i class="bi bi-water"></i>
+                        <p class="card-1-temp"><span id="pressuer"></span>&#8451;</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
